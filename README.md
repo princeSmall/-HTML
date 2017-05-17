@@ -250,6 +250,95 @@
 
     <iframe src = “浮动框架的源文件” width = “宽” height = “高” align = “对齐方式” scrolling = “滚动条属性”（auto：左对齐；yes：总是显示滚动条；no：不显示滚动条）><iframe>
 
+### <表单标记form>
+
+1、提交表单action
+
+       <form action = “表单的处理程序” name = “表单名称”>       </form>
+
+2、表单传送方法method
+
+       <form method = “get”(表单呗传送到action属性指定的URL，然后这新URL被送到处理程序上)>       </form>
+       <form method = “post”(表单数据包含在表单主体中，然后被送到处理程序上)>       </form>
+
+3、编码方式enctype
+
+       <form enctype = “application/x-www-form-urlencoded”(默认编码形式)>       </form>
+       <form enctype = “multipart/form-data”(上传文件的表单)>
+
+4、目标显示方式target
+
+         <form target = “_self”>在当前页面中打开链接
+         <form target = “_blank”>在一个全新的空白窗口打开链接
+         <form target = “_top”>在顶层框架中打开链接
+         <form target = “_parent”>在当前框架的上一层打开链接
+
+5、插入表单对象
+
+*文字字段text
+      
+     <input name = “控件名称” type = “text” value = “文字字段的默认取值” size = “控件的长度” ，maxlength = “最长字符数”>
+
+*密码域password
+    
+     <input name = “控件名称” type = “password” value = “文字字段的默认取值” size = “控件的长度” ，maxlength = “最长字符数”>
+
+*单选按钮
+
+    <input name = “按钮名称” type = “radio”  value = “单选按钮的值” checked/>
+
+*复选框checkbox
+       
+    <input name = “复选框名称” type = “checkbox” value = “复选框的值” checked/>
+
+*普通按钮button
+      
+     <input name = “按钮名称” type = “submit” value = “按钮的取值” onclick = “处理程序”/>
+
+*重置按钮reset
+      
+     <input name = “按钮名称” type = “reset” value = “按钮的取值” />
+
+*图像域image
+      
+     <input name = “图像的名称” type = “image” src = “图像的地址”>
+
+*隐藏域hidden
+     
+      <input name = “隐藏域的名称” type = “hidden” value = “隐藏域的取值” />
+
+*文件域file
+    
+     <input name = “文件域的名称” type = “file” size = “控件的长度” maxlength = “最长字符数”>
+
+6、菜单和列表
+
+*下拉菜单
+     
+    <select name = “下拉菜单名称”>
+       <option value = “选项值” selected(首选值)>选项显示内容
+       …..
+    </select>
+
+*列表项
+
+       <select name = “列表项的名称” size = “显示的列表项数” nultiple>
+       <option value = “选项值” selected>选项显示内容
+       ……
+       </select>
+
+7、文本域标记textarea
+
+     <textarea name = “文本域名称” cols = “列数” rows = “行数”>       </textarea>
+
+8、id标记
+
+      <id = 元素的标识名>
+
+/***
+   全部HTML小的操作及练习
+**/
+
 
 
 
