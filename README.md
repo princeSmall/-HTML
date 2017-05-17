@@ -4,27 +4,27 @@
 
 1、设置页面关键字
 
-<meta name = “keywords” content = “插入关键字”>
+    <meta name = “keywords” content = “插入关键字”>
 
 2、设置页面说明
 
-<meta name = “description” content = “设置页面说明”>
+    <meta name = “description” content = “设置页面说明”>
 
 3、定义编辑工具
 
-<meta name = “generator” content = “编辑软件的名称”>
+    <meta name = “generator” content = “编辑软件的名称”>
 
 4、设置作者信息
 
-<mate name = “author” content = “作者的姓名”>
+    <mate name = “author” content = “作者的姓名”>
 
 5、设置网页文字及语言
 
-<meta http-equiv = “content-type” content = “text/html” ;charset = “字符集类型”>
+    <meta http-equiv = “content-type” content = “text/html” ;charset = “字符集类型”>
 
 6、设置网页的定时跳转
 
-<meta http-equiv = “refresh” content = “跳转的时间；URL = 跳转的地址”>
+    <meta http-equiv = “refresh” content = “跳转的时间；URL = 跳转的地址”>
 
 ### <主题标记body>
 
@@ -34,11 +34,11 @@
 
 2、background属性可以设置图片为背景
 
-<background = “图片地址”>
+    <background = “图片地址”>
 
 3、text可以设置文字的颜色
 
-<text = “#9966CC”>
+    <text = “#9966CC”>
 
 4、link可以设置链接文字的颜色，alink可以设置正在访问的文字颜色,vlink访问后的字体颜色
 
@@ -92,31 +92,19 @@
 
 ### <图像image>
 
-<src = “图像文件的地址”>
-
-<alt = “提示文字”>
-
-<width = “宽” height = “高”>
-
-<border = “边框”>
-
-<vspace = “垂直边距”>
-
-<hspace = “水平边距”>
-
-<align = “排列方式”>
-
-<dynsrc = “设定avi文件的播放”>
-
-<loop = “设定avi文件循环播放次数”>
-
-<loopdelay = “设定avi文件循环播放延迟”>
-
-<start = “设定avi播放方式”>
-
-<lowsrc = “设定低分辨率图片”>
-
-<usemap = “映像地图”>
+    <src = “图像文件的地址”>
+    <alt = “提示文字”>
+    <width = “宽” height = “高”>
+    <border = “边框”>
+    <vspace = “垂直边距”>
+    <hspace = “水平边距”>
+    <align = “排列方式”>
+    <dynsrc = “设定avi文件的播放”>
+    <loop = “设定avi文件循环播放次数”>
+    <loopdelay = “设定avi文件循环播放延迟”>
+    <start = “设定avi播放方式”>
+    <lowsrc = “设定低分辨率图片”>
+    <usemap = “映像地图”>
 
 ### <列表>
 1、有序列表ol
@@ -155,6 +143,112 @@
     <td width、height、bgcolor、>表格格的开始和结束</td>
     <tfoot>表尾</tfoot>
     </table>
+
+### <链接>
+
+1、内部链接：与自身网站页面有关的链接
+
+    <a href = “链接地址” target = “目标窗口的打开方式”>
+      <target = “_self”>在当前页面中打开链接
+      <target = “_blank”>在一个全新的空白窗口打开链接
+      <target = “_top”>在顶层框架中打开链接
+      <target = “_parent”>在当前框架的上一层打开链接
+    </a>
+
+2、瞄点链接
+
+    <a name = “瞄点的名称”></a>
+    <a href = “#名称”>链接同一界面的瞄点</a>
+
+3、外部链接：当前网站之外的资源中
+
+    <a href = “http://….”>外部链接地址</a>
+    <a href = “mailto:E-mail”>E-mail输入邮箱地址</a>
+    <a href = “ftp://ftp….”>FTP文件传输网站</a>
+    <a href = “mp3.rar”>文件下载地址 、</a>
+
+### <添加多媒体>
+
+1、滚动标记marquee标签
+
+    <marquee>这标记之间添加要进行滚动的内容，并可以在标记之间设置文字或者图像的属性</marquee>
+
+2、滚动方向direction和滚动方式behavior
+
+    <marquee direction = “up” behavior =“scroll”>向上、循环滚动，默认效果</marquee>
+    <marquee direction = “down” behavior = “slide”>向下、滚动一次就停止</marquee>
+    <marquee direction = “left” behavior = “alternate“””>向左、来回交替进行滚动</marquee>
+    <marquee direction = “right”>向右</marquee>
+
+3、滚动速度和滚动延迟
+
+    <marquee scrollamount = “int” scrolldelay = “int”>滚动速度、滚动延迟时间<marquee>
+
+4、循环滚动loop
+
+    <marquee loop = “循环滚动次数”></marquee>
+
+5、滚动范围width、height
+
+    <marquee width = “宽” height = “高”></marquee>
+
+6、滚动的背景色
+
+    <marquee bgcolor = “#993300”>十六进制颜色值</marquee>
+
+7、滚动的空白空间hspace、vspace
+
+    <marquee hspace = “水平范围” vspace = “垂直范围”></marquee>
+
+8、插入多媒体Flash、音视频
+
+    <embed src = “多媒体文件地址、音视频文件地址” width = “多媒体的宽度” height = “多媒体的高度”>
+
+9、背景音乐bgsound
+
+    <bgsound  src = “背景音乐的地址” loop = “播放次数”（ture为无限次的播放）>
+
+10、插入Java Applet
+
+    <applet code = “Lake.class” width = “宽度” height = “高度”>
+    <param name = “文件夹的名称” value = “图片名称”>
+    </applet>
+
+<框架结构>
+
+1、水平分割窗口rows（像素或者百分比）
+
+    <frameset rows = “框架窗口的高度，框架窗口的高度….”>
+    <frame src = “top.html” name = “mainFrame” id = “mainFrame” scolling = “No”（控制框架滚动条显示） noresize = “noresize”（窗口尺寸大小不可调）>
+    <frame scr = “foot.html” name = “bottomFrame” id = “bottomFrame” >
+    …
+    </frameset>
+
+2、垂直分割窗口cols（像素或者百分比）
+
+    <frameset cols = “框架窗口的宽度，框架窗口的宽度…” framespacing = “0”(框架的边框宽度) frameborder = “no”（框架的边框） border = “0” bordercolor = “#996633”（框架的边框颜色）>
+    <frame src = “left.html”（页面源文件） name = “leftFrame”（页面名称） id = “leftFrame” marginwidth = “水平边距” marginheight = “垂直边距”>
+    <frame src = “left1.html”>
+    <frame src = “right.html” name = “rightFrame” id = “rightFrame”>
+    …
+    </frameset>
+
+3、嵌套分割窗口
+
+    <frameset rows = “” cols = “*”>
+    <frame>
+    <frameset cols = “”>
+    <frame>
+    <frame>
+    ...
+    </frameset>
+    </frameset>
+
+4、不支持框架<noframes>
+
+5、浮动框架iframe
+
+    <iframe src = “浮动框架的源文件” width = “宽” height = “高” align = “对齐方式” scrolling = “滚动条属性”（auto：左对齐；yes：总是显示滚动条；no：不显示滚动条）><iframe>
 
 
 
